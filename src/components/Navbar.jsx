@@ -51,7 +51,6 @@ const Logo = styled.h1`
   font-weight: bold;
   ${mobile({ fontSize: "24px" })}
 `;
-
 const Right = styled.div`
   flex: 1;
   display: flex;
@@ -79,7 +78,7 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>Bobi.</Logo>
+          <Logo>LAMA.</Logo>
         </Center>
         <Right>
           <MenuItem>REGISTER</MenuItem>

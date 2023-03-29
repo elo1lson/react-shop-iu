@@ -79,7 +79,7 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-export const Slider = () => {
+const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
   const handleClick = (direction) => {
     if (direction === "left") {
@@ -114,3 +114,5 @@ export const Slider = () => {
     </Container>
   );
 };
+
+export default Slider;

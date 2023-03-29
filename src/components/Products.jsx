@@ -1,19 +1,22 @@
 import styled from "styled-components";
 import { popularProducts } from "../data";
-import { Product } from "./Product";
+import Product from "./Product";
 
 const Container = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
-  justify-content: space-between;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 `;
-export const Products = () => {
+
+const Products = () => {
   return (
     <Container>
-      {popularProducts.map((i) => {
-        return <Product item={i} key={i.id} />;
-      })}
+      {popularProducts.map((item) => (
+        <Product item={item} key={item.id} />
+      ))}
     </Container>
   );
 };
+
+export default Products;

@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -11,6 +10,9 @@ const Container = styled.div`
   font-size: 14px;
   font-weight: 500;
 `;
-export const Announcement = () => {
-  return <Container>Only $4999.99</Container>;
+
+const Announcement = () => {
+  return <Container>Super Deal! Free Shipping on Orders Over $50</Container>;
 };
+
+export default Announcement;
