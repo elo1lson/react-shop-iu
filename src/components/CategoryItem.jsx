@@ -6,14 +6,15 @@ const Container = styled.div`
   margin: 3px;
   height: 70vh;
   position: relative;
+  ${mobile({ "padding-inline": "10px" })}  
 `;
 
 const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 5px;  
   ${mobile({ height: "20vh" })}
-
 `;
 
 const Info = styled.div`

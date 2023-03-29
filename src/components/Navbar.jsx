@@ -35,22 +35,27 @@ const SearchContainer = styled.div`
   align-items: center;
   margin-left: 25px;
   padding: 5px;
+  ${mobile({ "margin-left": "10px"})}
+  
 `;
 
 const Input = styled.input`
   border: none;
-  ${mobile({ width: "50px" })}
+  ${mobile({ width: "50vw", outline: "none", "font-size": "17px", "font-weight": "medium"})}
 `;
 
 const Center = styled.div`
   flex: 1;
   text-align: center;
+  ${mobile({ display: "none" })}
+  
 `;
 
 const Logo = styled.h1`
   font-weight: bold;
   ${mobile({ fontSize: "24px" })}
 `;
+
 const Right = styled.div`
   flex: 1;
   display: flex;
